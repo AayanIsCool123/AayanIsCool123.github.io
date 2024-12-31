@@ -1,0 +1,115 @@
+body {
+    background-color: white;
+    background-image: url('https://m.media-amazon.com/images/I/61dF2xvErNL._AC_SL1500_.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+li, p {
+    font-size: 20px;
+    color: #373737;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+ul {
+    align-items: center;
+}
+
+h2 {
+    font-size: 40px;
+    font-family: 'courier';
+}
+
+h1 {
+    font-size: 50px;
+}
+
+.box {
+    text-align: center;
+    border: 3px solid black;
+    margin: 10px;
+    height: auto;
+    width: 400px;
+    background-color: lightgray;
+    flex: 1;
+}
+
+#place {
+    background-color: lightgray;
+    color: green;
+}
+
+.title {
+    color: maroon;
+}
+
+button {
+    height: 40px;
+    width: 100px;
+    border: 2px solid orange;
+    background-color: yellow;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#placeName:hover, #nextDayWeather1:hover {
+    animation: spin 1s infinite alternate;
+    cursor: pointer;
+}
+
+#currentWeather:hover, #nextDayWeather2:hover {
+    animation: big 0.8s infinite alternate;
+    cursor: pointer;
+}
+
+#actualFeeling:hover, #nextDayWeather3:hover {
+    animation: color 1s infinite alternate;
+    cursor: pointer;
+}
+
+#tempHigh:hover, #nextDayWeather4:hover {
+    animation: move1 1s infinite alternate;
+    cursor: pointer;
+}
+
+#tempLow:hover, #nextDayWeather5:hover {
+    animation: move2 1s infinite alternate;
+    cursor: pointer;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes big {
+    from {transform: scale(1);}
+    to {transform: scale(1.5);}
+}
+
+@keyframes color {
+    0% {color: black;}
+    33% {color: red;}
+    66% {color: orange;}
+    100% {color: yellow;}
+}
+
+@keyframes move1 {
+    0% {transform: translateX(0);}
+    100% {transform: translateX(50px);}
+}
+
+@keyframes move2 {
+    0% {transform: translateY(0);}
+    100% {transform: translateY(20px);}
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+}
